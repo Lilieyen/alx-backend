@@ -12,16 +12,17 @@ class BasicCache(BaseCaching):
     """
 
     def put(self, key, item):
-        """
-        assign to the dictionary self.cache_data
-        the item value for the key 'key'
-        """
+        def put(self, key, item):
+            """
+            assign to the dictionary self.cache_data the item
+            value for the key 'key'
+            """
         if key and item:
             self.cache_data[key] = item
 
     def get(self, key):
-         """
-         return value in self.cache_data linked to key
-         """
-         if key:
-             return self.cache_data.get(key, None)
+        """
+        return value in self.cache_data linked to key
+        """
+        if key:
+            return self.cache_data.get(key, None)
