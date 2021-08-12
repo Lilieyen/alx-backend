@@ -12,11 +12,10 @@ class BasicCache(BaseCaching):
     """
 
     def put(self, key, item):
-        def put(self, key, item):
-            """
-            assign to the dictionary self.cache_data the item
-            value for the key 'key'
-            """
+        """
+        assign to the dictionary self.cache_data the item
+        value for the key 'key'
+        """
         if key and item:
             self.cache_data[key] = item
 
