@@ -5,7 +5,7 @@
 BaseCaching = __import__('base_caching').BaseCaching
 
 
-calss LIFOCache(BaseCaching):
+class LIFOCache(BaseCaching):
     """
     LIFOCache inherits from BaseCaching
     """
