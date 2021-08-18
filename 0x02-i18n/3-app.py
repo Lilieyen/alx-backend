@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
-
 """
 Parametrize templates
 """
 
 from flask import Flask, render_template, request
 from flask_babel import Babel
-
+s
 app = Flask(__name__)
 babel = Babel(app)
 
 
 class Config:
-    """
-    make configurations
+    """ Config class.
     """
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
