@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""
-Basic Babel setup
-"""
 
+"""
+1. Basic Flask app
+"""
 
 from flask import Flask, render_template, request
 from flask_babel import Babel
@@ -11,9 +11,9 @@ app = Flask(__name__)
 babel = Babel(app)
 
 
-class config:
+class Config:
     """
-    make configurations
+    Config class.
     """
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
@@ -28,7 +28,6 @@ def hello():
     """
     return string
     """
-
     return render_template('1-index.html')
 
 
